@@ -1,0 +1,188 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-position: center;
+  position: relative;
+  color: black;
+}
+body {
+  background-image: linear-gradient(
+      rgba(75, 0, 130, 0.5),
+      rgba(75, 0, 130, 0.5)
+    ),
+    url(./background-login-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Smooch Sans", sans-serif;
+}
+.form-box {
+  width: 50%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -90%);
+  background: #fff;
+  padding: 10px 50px 70px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.form-box h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #3c00a0;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  border-radius: 50px;
+  background: #3c00a0;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field {
+  background: #eaeaea;
+  margin: 16px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+  max-height: 65px;
+  transition: max-height 0.5s ease;
+  overflow: hidden;
+  color: #3c00a0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.input-field:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3 ease;
+}
+
+.input-field i {
+  margin-left: 15px;
+  color: #3c00a0;
+}
+
+.button-field {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button-field button {
+  flex-basis: 48%;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  font-family: "Roboto Mono", monospace;
+}
+
+.input-group {
+  height: 230px;
+}
+
+.button-field button.disable {
+  background: #eaeaea;
+  color: #3c00a0;
+}
+
+.disable-nameField {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.disable-login {
+  display: none;
+  transition: display 0.5s ease;
+}
+
+.button-field-2 button {
+  flex-basis: 48%;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  font-family: "Roboto Mono", monospace;
+}
+
+.button-field-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disable-login {
+  display: none;
+}
+
+#status {
+  font-family: "Roboto Mono", monospace;
+  color: red;
+}
+
+#status,
+#emoji {
+  display: inline;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.para {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.password-toggle {
+  padding-right: 15px;
+}
+
+.part_1 {
+  color: white;
+  text-align: center;
+  transform: translate(-32%, -50%);
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+}
+
+.part_2 {
+  color: white;
+  text-align: center;
+  transform: translate(-22%, -80%);
+  font-size: 150px;
+  font-family: "Sofia", cursive;
+}
+
+.part_3 {
+  color: white;
+  text-align: center;
+  transform: translate(-12%, -190%);
+  font-size: 100px;
+  font-family: "Tillana", cursive;
+}

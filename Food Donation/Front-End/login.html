@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Donation - Login/SignUp</title>
+    <link rel="icon" href="./head-logo.png" type="image/png" />
+    <img src="./logo.png" alt="logo" width="200px" />
+    <link rel="stylesheet" href="style_login.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@300&family=Smooch+Sans:wght@100&family=Sofia&family=Tillana:wght@500&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/cffc8649ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="branding">
+        <h1 class="part_1">Lets Imagine</h1>
+        <h1 class="part_2">A World</h1>
+        <h1 class="part_3">Without Hunger</h1>
+      </div>
+      <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <div class="button-field">
+          <button type="button" id="signUp">Sign Up</button>
+          <button type="button" class="disable" id="signIn">Sign In</button>
+        </div>
+        <div class="para">
+          <p id="status"></p>
+        </div>
+        <form id="signIn-signUp">
+          <div class="input-group">
+            <div class="input-field" id="nameField">
+              <i class="fa-solid fa-user-tie"></i>
+              <input
+                type="text"
+                name=""
+                id="name"
+                required
+                placeholder="Name"
+              />
+            </div>
+            <div class="input-field" id="emailField">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="text"
+                name=""
+                id="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-field" id="passField">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                name=""
+                id="pass"
+                required
+                placeholder="Password"
+              />
+              <span
+                class="password-toggle"
+                onclick="checkPassoword()"
+                id="password-check"
+                ><i id="password-emoji"></i
+              ></span>
+            </div>
+          </div>
+          <div class="button-field-2" id="login">
+            <button type="button" onclick="checkDetails()">
+              <i class="fa-solid fa-right-to-bracket"></i> Login
+            </button>
+          </div>
+          <div class="button-field-2" id="continue">
+            <button type="button" onclick="checkDetails()">
+              <i class="fa-solid fa-arrow-right"></i> Continue
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
